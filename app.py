@@ -17,10 +17,10 @@ def main():
         st.write("Generating speech...  (This may take a few seconds")
 
         # Placeholder for generated audio URL
-        audio_url = "ReelAudio-29983.mp3"
+        audio_url = "sample.mp3"
         
         st.audio(audio_url, format="audio/mp3")
-        st.download_button(label="Download Audio", data=open(audio_url, "rb"), file_name="generated_audio.mp3")
+        st.download_button(label="Download Audio", data=open(audio_url, "rb"), file_name="sample.mp3")
 
 if __name__ == "__main__":
     main()
